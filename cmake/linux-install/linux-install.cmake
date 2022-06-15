@@ -7,13 +7,8 @@ if(CMAKE_HOST_SYSTEM_NAME STREQUAL "Linux")
     # program 程序本身
     install(TARGETS ${PROJECT_NAME}
         DESTINATION "lib/deepin-screensaver/modules/")
-
-    # 静态资源
-    install(DIRECTORY
-        resources/assets
-        DESTINATION "share/${PROJECT_NAME}")
     
-        # 适用于深度屏保预览的缩略图结构
+    # 适用于深度屏保预览的缩略图结构
     install(DIRECTORY
         rootfs/usr
         DESTINATION "../")
